@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="style.css")
+    body 
+        main 
+            section.player.player--0.player--active 
+                h2.name#name--0 Player 1
+                p.score#score--0 43
+                .current 
+                    p.current-label Current 
+                    p.current-score#current--0 0
+            section.player.player--1 
+                h2.name#name--1 Player 2
+                p.score#score--1 24
+                .current    
+                    p.current-label Current 
+                    p.current-score#current--1 0
+
+            img.dice(src="dice-5.png", alt="Playing dice")
+            button.btn.btn--new 🔄 New game
+            button.btn.btn--roll 🎲 Roll dice
+            button.btn.btn--hold 📥 Hold
+        script(src="script.js") 
